@@ -165,17 +165,18 @@
 
 .title {text-align: center;}
 
-.clearfix::after {
+.portfolio::after {
   content: "";
   clear: both;
   display: table;
 }
-.clearfix {
+.portfolio {
   border: 2px solid white;
 margin-top: 25px;
 }
 
-/* A imagem ocupa 80% mas não pode passar de 450px */
+/* A imagem ocupa 97% porque se ocupar 100 ela desconfigura */
+/* também não pode passar de 450px senão sica muito grande em tablet e desktop */
 .img-portfolio{
 margin: 5px 5px 5px 5px;
 width: 97%;
@@ -309,21 +310,21 @@ max-width: 450px;
 
 
 
-<div class="clearfix">
+<div class="portfolio">
   <img class="img-portfolio" src="assets/img/biblio.JPG" alt="Pineapple" align="left">
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...</p>
 
 </div>
 
-<div class="clearfix">
+<div class="portfolio">
   <img class="img-portfolio" src="assets/img/biblio.JPG" alt="Pineapple" align="left">
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...</p>
 
 </div>
 
-<div class="clearfix">
+<div class="portfolio">
   <img class="img-portfolio" src="assets/img/biblio.JPG" alt="Pineapple" align="left">
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...</p>
