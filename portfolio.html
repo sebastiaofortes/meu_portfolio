@@ -165,6 +165,14 @@
 
 .title {text-align: center;}
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix {
+  border: 2px solid white;
+}
 </style>
 
 
@@ -288,61 +296,10 @@
     <h1>Meu Portfolio.</h1>
     <p class="marketing-byline">Confira abaixo uma seleção de meus prohetos para conhecer mais meu trabalho</p>
     <div class="row-fluid">
-      <ul class="thumbnails example-sites">
 
 
-        <li>
-    <div class="span6">Biblioteca port.h</div>
- <div class="span6">
-          <a href="http://jason.sperske.com/wad/" target="_blank">
-            <img src="assets/img/biblio.JPG" alt="WADParser.py">
-         </a>
-	 </div> 
-        </li>
-        <li>
-<div class="span6">Rede VLI</div>
-	 <div class="span6">
-          <a href="http://kippt.com/" target="_blank">
-            <img src="assets/img/rede-vli.PNG" alt="Kippt" width="80%" height="80%">
-          </a>
-	</div>
-        </li>
-        <li>
-  <div class="span6">FMDS digital</div>
-<div class="span6">
-          <a href="http://www.gathercontent.com/" target="_blank">
-            <img src="assets/img/fmds-vli.PNG" alt="Gather Content">
-          </a>
-	</div> 
-        </li>
-        <li>
-  <div class="span6">Linguagem LOBO</div>
-  <div class="span6">
-          <a href="http://www.jshint.com/" target="_blank">
-            <img src="assets/img/fmds-vli.PNG" alt="JS Hint">
-          </a>
- 	</div>
-        </li>
-      </ul>
-
-<div >
-<div>
-  <img src="assets/img/biblio.JPG" alt="Pineapple" width="340" height="340">
-<div>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
-</div>
-
-<div >
-<div>
-  <img src="assets/img/biblio.JPG" alt="Pineapple" width="340" height="340">
-<div>
-  Lorem ipsum dolor sit amet
-</div>
-
-<div >
-<div>
-  <img src="assets/img/biblio.JPG" alt="Pineapple" width="340" height="340">
-<div>
+<div class="clearfix">
+  <img style="float: right;" src="assets/img/biblio.JPG" alt="Pineapple" width="170" height="170">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
 </div>
 
