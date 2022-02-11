@@ -791,13 +791,7 @@ h3 {
   line-height: 20px;
 }
 
-h3:before {
-  content: ">>> ";
-}
 
-h3:after {
-  content: " <<<";
-}
 
 h1 {
   font-size: 18px;
