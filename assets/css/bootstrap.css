@@ -704,7 +704,7 @@ em:after,
 var:after,
 address:after,
 dfn:after {
-  content: '/';
+  content: '';
 }
 
 .muted {
