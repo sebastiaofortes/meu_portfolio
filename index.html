@@ -155,24 +155,32 @@
 
 .title {text-align: center;}
 
-.portfolio::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .portfolio {
   border: 2px solid white;
-margin-top: 25px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.portfolio > div {
+  flex: 1;
 }
 
 /* A imagem ocupa 97% porque se ocupar 100 ela desconfigura */
 /* também não pode passar de 450px senão sica muito grande em tablet e desktop */
 .img-portfolio{
-margin: 5px 5px 5px 5px;
-width: 97%;
-max-width: 450px;
+  margin: 5px;
+  width: 97%;
+  max-width: 450px;
+  flex-shrink: 0;
+}
 
-
+@media screen and (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+  }
 }
 </style>
 
