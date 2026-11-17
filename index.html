@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Sebastião Fortes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Sebastião Fortes - Desenvolvedor Back-end">
+    <meta name="description" content="Portfólio de Sebastião Fortes - Senior Software Engineer | Golang, Java, Observabilidade, Sistemas Distribuídos e Agentes de IA">
     <meta name="author" content="Sebastião Fortes">
 
     <!-- Le styles -->
@@ -155,24 +155,32 @@
 
 .title {text-align: center;}
 
-.portfolio::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .portfolio {
   border: 2px solid white;
-margin-top: 25px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+.portfolio > div {
+  flex: 1;
 }
 
 /* A imagem ocupa 97% porque se ocupar 100 ela desconfigura */
 /* também não pode passar de 450px senão sica muito grande em tablet e desktop */
 .img-portfolio{
-margin: 5px 5px 5px 5px;
-width: 97%;
-max-width: 450px;
+  margin: 5px;
+  width: 97%;
+  max-width: 450px;
+  flex-shrink: 0;
+}
 
-
+@media screen and (max-width: 768px) {
+  .portfolio {
+    flex-direction: column;
+  }
 }
 </style>
 
@@ -199,10 +207,13 @@ max-width: 450px;
                 <a href="./index.html">Início</a>
               </li>
               <li class="">
+                <a href="./index.html#sobre">Sobre</a>
+              </li>
+              <li class="">
                 <a href="./index.html#portfolio">Portfólio</a>
               </li>
               <li class="">
-                <a href="./index.html#sobre">Sobre</a>
+                <a href="./index.html#artigos">Artigos</a>
               </li>
               <li class="">
                 <a href="./index.html#contato">Contato</a>
@@ -228,14 +239,14 @@ max-width: 450px;
 
 <img src="assets/img/sf.png" alt="Logo Sebastião Fortes">
 
- <h1>Sebastião Fortes </h1>
-<h1>Desenvolvedor back-end</h1>
+ <h1>Sebastião Fortes</h1>
+<h1>Senior Software Engineer</h1>
 <img src="assets/img/pong1.gif" alt="Animação do jogo Pong">
 </div>
     
 
 <br /> 
- <h1>Olá visitante! Voltamos para 1995, ano de lançamento do Windows 95, da linguagem Java e da única e exclusiva versão do Sebastião Fortes Avelar de Almeida</h1>
+ <h1>Olá, visitante! Voltamos para 1995 — ano de lançamento do Windows 95, da linguagem Java e da única e exclusiva versão do Sebastião Fortes Avelar de Almeida.</h1>
 <br /> 
 
   </div>
@@ -259,44 +270,44 @@ max-width: 450px;
   <div class="t-container left">
     <div class="content">
       <h2>Quem sou eu</h2>
-    <h3>Sou um desenvolvedor back-end com grandes conhecimentos nas linguagens Java, C++ e PHP, especialista em utilizar o framework Spring com foco para a web e segurança digital.</h3>
-  
+      <h3>Sou Senior Software Engineer com 10 anos de experiência na área de tecnologia, atuando na construção de microsserviços em larga escala, observabilidade e implementação de agentes de IA no maior e-commerce da América Latina. No dia a dia, desenvolvo soluções utilizando Golang e Java, sistemas de mensageria e ferramentas de observabilidade como Datadog e Grafana.</h3>
     </div>
   </div>
   <div class="t-container right">
     <div class="content">
       <h2>Meu propósito</h2>
-      <h3>Eu sou apaixonado por resolver problemas, por pensar o que não foi pensado antes, ou por simplesmente aprender. Nos últimos anos participei de projetos em grandes organizações como:</h3>
-<h3>> Vale/VLI</h3>
-<h3>> Tata Consultancy Services</h3>
-<h3>> Mercado Livre</h3>
+      <h3>Sou movido por analisar e resolver problemas complexos em sistemas distribuídos, investigar causas-raiz além dos sintomas e projetar arquiteturas resilientes. Ao longo da minha trajetória, contribuí em projetos de alto impacto em grandes organizações como:</h3>
+      <h3>> Mercado Livre</h3>
+      <h3>> Tata Consultancy Services (TCS)</h3>
+      <h3>> VLI Logística / Vale</h3>
     </div>
   </div>
   <div class="t-container left">
     <div class="content">
       <h2>Princípios</h2>
-      <h3>Acredito que o aprendizado constante e o trabalho em equipe são as chaves de tudo.</h3>
-    <h3>Aprendi a programar com 13 anos de idade em Delphi, desde então não paro de estudar, sou graduado em análise e desenvolvimento de sistemas e já participei de bootcamps em grandes empresas como:</h3>
-<h3>> Santander</h3>
-<h3>> GFT</h3>
+      <h3>Acredito que o aprendizado contínuo e o compartilhamento de conhecimento em equipe são a base da boa engenharia de software.</h3>
+      <h3>Comecei a programar aos 13 anos em Delphi e, desde então, nunca parei de evoluir. Sou graduado em Análise e Desenvolvimento de Sistemas pela UNIP (2021) e acumulo formações e reconhecimentos como:</h3>
+      <h3>> Hackathon Artificial Intelligence (Mercado Livre)</h3>
+      <h3>> IT Bootcamp Go (Digital House)</h3>
+      <h3>> Bootcamps Santander & GFT</h3>
     </div>
   </div>
   <div class="t-container right">
     <div class="content">
       <h2>Colaborativo</h2>
-      <h3>Participante de várias comunidades tech, escritor de artigos, criador e colaborador de projetos open source (inclusive criador de uma linguagem de programação :)) </h3>
+      <h3>Palestrante em comunidades de tecnologia, autor de artigos técnicos sobre Observabilidade, Golang, Arquitetura de Software e Agentes de IA, além de criador e colaborador de projetos open source (incluindo a criação de uma linguagem de programação brasileira!).</h3>
     </div>
   </div>
   <div class="t-container left">
     <div class="content">
       <h2>Habilidades</h2>
-      <h3>> Java</h3>
-      <h3>> Golang</h3>
-      <h3>> Javascript</h3>
-      <h3>> Arquitetura de Software</h3>
-      <h3>> AI Agents</h3>
-      <h3>> Observabilidade</h3>
-      <h3>> DevOps</h3>
+      <h3>> Linguagens: Golang, Java, Python, JavaScript</h3>
+      <h3>> Frameworks: Spring, Wire, NestJS</h3>
+      <h3>> Arquitetura: Microsserviços, Sistemas Distribuídos e Mensageria</h3>
+      <h3>> IA: Agentes de IA, Orquestração, RAG e MCP</h3>
+      <h3>> Observabilidade & DevOps: Datadog, Grafana, CI/CD</h3>
+      <h3>> Cloud & Dados: AWS, Azure, Spanner, BigQuery, MySQL, Key-Value</h3>
+      <h3>> Qualidade: Testes Unitários, E2E e Performance (JUnit)</h3>
     </div>
   </div>
 
@@ -324,7 +335,7 @@ max-width: 450px;
   <div style="border: 2px;text-align: center;"> 
 
 <h3>Projeto port.h</h3>
-<h3>O projeto port.h é uma biblioteca open source desenvolvida em C++ para permitir a compilação de códigos em uma linguagem semelhante ao Portugol, porém com uma extensão ao paradigma orientado a objetos, ela foi criada com o objetivo de facilitar o ensino de programação.</h3>
+<h3>O projeto port.h é uma biblioteca open source desenvolvida em C++ para permitir a compilação de códigos em uma linguagem semelhante ao Portugol, com extensão ao paradigma orientado a objetos. Foi criada com o objetivo de reduzir a curva de aprendizado no ensino de programação.</h3>
 
 <br />
 
@@ -344,7 +355,7 @@ max-width: 450px;
 
 <h3>Rede VLI</h3>
 
-<h3>Implantado na unidade Pirapora da VLI logística o aplicativo Rede VLI é um ERP implementado sob a forma de aplicativo web desenvolvido para facilitar a análise de dados para a obtenção de insights sobre a produção.</h3>
+<h3>Implantado na unidade Pirapora da VLI Logística, o aplicativo Rede VLI é um sistema web estilo ERP desenvolvido para centralizar dados operacionais e facilitar a geração de insights sobre a produção.</h3>
 
 <br />
 
@@ -362,7 +373,7 @@ max-width: 450px;
 <h3>FMDS Digital</h3>
 
 <h3>Aplicativo web pioneiro no gerenciamento remoto do chão de fábrica.</h3>
-<h3>O FMDS digital foi desenvolvido e implantado na unidade Pirapora da VLI logística para realizar o gerenciamento do chão de fábrica de forma remota em virtude da pandemia do COVID-19.</h3>
+<h3>Desenvolvido e implantado na unidade Pirapora da VLI Logística para viabilizar a gestão remota de indicadores operacionais e manter a gestão participativa durante a pandemia de COVID-19.</h3>
 
 <br />
 
@@ -380,12 +391,12 @@ max-width: 450px;
 
 <h3>Spring Blockchain</h3>
 
-<h3>Blockchain desenvolvida utilizando o framework Spring Boot e Javascript.</h3>
-<h3>O projeto Spring Blockchain consiste em uma implementação de Blockchain desenvolvida utilizando a linguagem Java por meio do framework Spring Boot. O grande diferencial desse projeto é a possibilidade de utilização do próprio poder de processamento dos clientes (smartphones, tablets, PCs) para a mineração dos blocos.</h3>
+<h3>Blockchain desenvolvida utilizando o framework Spring Boot e JavaScript.</h3>
+<h3>Implementação de uma rede Blockchain em Java com Spring Boot cujo diferencial é permitir o uso do poder de processamento distribuído dos próprios clientes (smartphones, tablets e PCs) na mineração dos blocos.</h3>
 
 <br />
 
-  <p><a class="btn btn-large btn-primary" href="https://block99.herokuapp.com/" >Info </a></p>
+  <p><a class="btn btn-large btn-primary" href="https://github.com/sebastiaofortes/spring_blockchain" target="_blank" rel="noopener noreferrer">Info </a></p>
 
 </div>
 
@@ -400,7 +411,7 @@ max-width: 450px;
 <h3>Linguagem SOL</h3>
 
 <h3>Uma linguagem de programação para brasileiros desenvolvida por brasileiros!</h3>
-<h3>A linguagem SOL é uma linguagem de programação baseada em portugol e em C++ desenvolvida por Sebastião Fortes Avelar de Almeida com o objetivo de permitir que pessoas de fora do mundo da programação possam criar pequenos programas por meio de um código simples e de fácil compreensão, essa linguagem também tem o objetivo de facilitar o ensino de programação para iniciantes.</h3>
+<h3>A linguagem SOL é uma linguagem de programação baseada em Portugol e C++, criada por Sebastião Fortes Avelar de Almeida para permitir que iniciantes e entusiastas desenvolvam programas por meio de uma sintaxe simples, intuitiva e totalmente em português.</h3>
 
 <br />
 
@@ -417,9 +428,8 @@ max-width: 450px;
 
 <h3>Narrador da Web</h3>
 
-<h3>Desenvolvido para pessoas com baixa visão, a extensão realiza a leitura em voz do conteúdo dos sites</h3>
-<h3>Extensão desenvolvida para facilitar a navegação na web por parte de pessoas com baixa visão.
-  O Narrador da Web realiza a leitura em voz do conteúdo de sites da web, basta o usuário posicionar o cursor do mouse sobre textos e links que o conteúdo será magicamente narrado.</h3>
+<h3>Extensão de acessibilidade para leitura em voz de conteúdos da web.</h3>
+<h3>Desenvolvida para auxiliar pessoas com baixa visão na navegação pela internet, narrando automaticamente textos e links ao posicionar o cursor do mouse sobre os elementos da página.</h3>
 
 <br />
 
@@ -431,6 +441,45 @@ max-width: 450px;
 
 
      </div>
+
+    <hr class="soften">
+    <br />
+<p id="artigos">C:>artigos </p>
+
+    <h3>Artigos técnicos em destaque sobre Arquitetura, Sistemas Distribuídos, Observabilidade e IA</h3>
+    <div class="row-fluid">
+
+<div class="portfolio">
+  <img class="img-portfolio" src="assets/img/artigo-arquitetura-transicao.webp" alt="Artigo Arquitetura de Transição" align="left">
+  <div style="border: 2px;text-align: center; padding: 15px;">
+    <h3>Arquitetura de Transição: Migrando milhões de requisições utilizando feature flags</h3>
+    <h3>Estudo de caso sobre como conduzir a migração gradual de um serviço crítico com milhões de requisições por minuto sem impactar a experiência do usuário.</h3>
+    <br />
+    <p><a class="btn btn-large btn-primary" href="https://medium.com/@sebastiofortes/arquitetura-de-transi%C3%A7%C3%A3o-migrando-milh%C3%B5es-de-requisi%C3%A7%C3%B5es-utilizando-feature-flags-fe0a13dead07" target="_blank" rel="noopener noreferrer">Ler Artigo</a></p>
+  </div>
+</div>
+
+<div class="portfolio">
+  <img class="img-portfolio" src="assets/img/artigo-observabilidade-alertas.webp" alt="Artigo Observabilidade e Alertas em Sistemas Distribuídos" align="left">
+  <div style="border: 2px;text-align: center; padding: 15px;">
+    <h3>Observabilidade: Um Framework Para Lidar com Alertas em Sistemas Distribuídos</h3>
+    <h3>Framework prático com quatro princípios para análise de métricas, priorização de alertas e tomada de decisão rápida, reduzindo a fadiga durante o atendimento de incidentes.</h3>
+    <br />
+    <p><a class="btn btn-large btn-primary" href="https://medium.com/@sebastiofortes/observabilidade-um-framework-para-lidar-com-alertas-em-sistemas-distribu%C3%ADdos-274ed658cfbb" target="_blank" rel="noopener noreferrer">Ler Artigo</a></p>
+  </div>
+</div>
+
+<div class="portfolio">
+  <img class="img-portfolio" src="assets/img/artigo-observabilidade-ia.webp" alt="Artigo Observabilidade com Agentes de IA" align="left">
+  <div style="border: 2px;text-align: center; padding: 15px;">
+    <h3>Observabilidade com agentes de IA: indo além de traces, métricas e logs</h3>
+    <h3>Como utilizar agentes de IA para correlacionar topologia de arquitetura, histórico de eventos e incidentes nos processos de observabilidade em sistemas distribuídos.</h3>
+    <br />
+    <p><a class="btn btn-large btn-primary" href="https://medium.com/@sebastiofortes/observabilidade-com-agentes-de-ia-indo-al%C3%A9m-de-traces-m%C3%A9tricas-e-logs-b5860809cde0" target="_blank" rel="noopener noreferrer">Ler Artigo</a></p>
+  </div>
+</div>
+
+    </div>
 
 
    <hr class="soften">
@@ -444,10 +493,10 @@ max-width: 450px;
 <div class="span6" > 
     <a class="btn btn-block btn-large" href="mailto:sebastiaofortes4@gmail.com" title="Vamos conversar"><i class="fa-solid fa-envelope"></i> Email</a>
     <a class="btn btn-block btn-large" href="https://www.linkedin.com/in/sebastiao-fortes-avelar"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-    <a class="btn btn-block btn-large" href="https://sebastiaofortes.blogspot.com/"><i class="fa-brands fa-blogger"></i> Meu Blog</a>
+    <a class="btn btn-block btn-large" href="https://medium.com/@sebastiofortes" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium"></i> Medium</a>
+    <a class="btn btn-block btn-large" href="https://sebastiaofortes.blogspot.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-blogger"></i> Meu Blog</a>
     <a class="btn btn-block btn-large" href="https://github.com/sebastiaofortes/"><i class="fa-brands fa-github"></i> GitHub</a>
    <a class="btn btn-block btn-large" href="https://www.instagram.com/sebastiaofortes4/"><i class="fa-brands fa-instagram-square"></i> Instagram</a>
-   <a class="btn btn-block btn-large" href="meu-curriculo.pdf"><i class="fa-solid fa-download"></i> Meu Currículo</a>
 
 
 
